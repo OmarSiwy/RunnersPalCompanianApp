@@ -1,3 +1,15 @@
 {
+  "compilerOptions": {
+    "noImplicitAny": true,
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "sourceMap": true,
+    "baseUrl": ".", // This sets the base directory for non-relative module names
+    "paths": {
+      "@components/*": ["./src/components/*"],
+      "@helper/*": ["./src/helper/*"]
+    }
+  },
+  "include": ["src/**/*"],
   "extends": "@react-native/typescript-config/tsconfig.json"
 }
